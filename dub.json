@@ -1,0 +1,37 @@
+{
+	"authors": [
+		"Lizzy Hwang, Raquel Garcia, Ziyang Wang, Anwesa Basu"
+	],
+	"copyright": "Copyright © 2023, HuskyLand",
+	"targetType": "executable",
+    "targetPath": "bin",
+	"configurations": [
+		{"name":"executable"},
+		{
+            "name":"unittest",
+            "preBuildCommands": ["dub run unit-threaded -c gen_ut_main -- -f bin/ut.d -d dub"],
+            "mainSourceFile":"bin/ut.d",
+            "buildOptions": ["unittests"],
+			"excludedSourceFiles": ["source/app.d"],
+			"sourcePaths": ["tests/"],
+            "importPaths": ["tests/"],
+            "dependencies": {
+				"bindbc-sdl": "1.2.4",
+				"unit-threaded": "2.1.7"
+			}
+        }
+	],
+	"dependencies": {
+		"bindbc-sdl": "~>1.2.4",
+		"unit-threaded": "2.1.7"
+	},
+	"description": "Husky Town!",
+	"license": "proprietary",
+	"name": "graphics_project",
+	"versions": [
+		"SDL_2012", "SDL_TTF_2012"
+	],
+	"libs": [
+		"SDL2", "SDL2_ttf"
+	]
+}
