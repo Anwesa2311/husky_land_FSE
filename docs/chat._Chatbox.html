@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Chatbox (chat.Chatbox)</title>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="style.css" rel="stylesheet" />
+        <script src="script.js" type="text/javascript"></script>
+
+	
+	<link href="search-results.html" rel="prefetch" />
+</head>
+<body>
+	<div id="page-header">
+		<div id="logotype">
+		<span>Documentation</span>
+		<nav>
+			<a href="http://dlang.org/">Dlang.org</a>
+		</nav>
+		</div>
+
+		<form action="search-docs.html" id="search">
+			<input name="searchTerm" placeholder="Find a symbol name..." type="search" />
+			<input type="submit" value="Go" />
+		</form>
+	</div>
+	<div id="page-body">
+		<div id="page-content">
+		<h1>Chatbox</h1><div class="breadcrumbs"><a class="breadcrumb" href="chat.html">chat</a> </div><div><div class="documentation-comment synopsis"><div><p>Thid struct manages the chatbox. It allows the user to type his message and updates the string
+typed on screen.</p></div></div></div><div class="annotated-prototype"><div class="aggregate-prototype"><div class="attributes"></div><span class="builtin-type">struct</span> Chatbox  {<div class="aggregate-member"><div class="attributes"></div><tt class="highlighted"><span class="type">int</span></tt> <span class="name">window_width</span>;</div><div class="aggregate-member"><div class="attributes"></div><tt class="highlighted"><span class="type">int</span></tt> <span class="name">window_height</span>;</div><div class="aggregate-member"><div class="attributes"></div><tt class="highlighted"><span class="hid">TTF_Font</span>*</tt> <span class="name">font</span>;</div><div class="aggregate-member"><div class="attributes"></div><tt class="highlighted"><span class="hid">SDL_Color</span></tt> <span class="name">text_color</span>;</div><div class="aggregate-member"><div class="attributes"></div><tt class="highlighted"><span class="type">string</span></tt> <span class="name">username</span>;</div><div class="aggregate-member"><div class="attributes"></div><tt class="highlighted"><span class="type">string</span></tt> <span class="name">text_input</span>;</div><div class="aggregate-member"><div class="attributes"></div><tt class="highlighted"><span class="hid">SDL_Rect</span></tt> <span class="name">dest</span>;</div><div class="aggregate-member"><div class="attributes"></div><tt class="highlighted"><span class="hid">SDL_Rect</span></tt> <span class="name">username_rect</span>;</div><div class="aggregate-member"><div class="attributes"></div><tt class="highlighted"><span class="hid">SDL_Texture</span>*</tt> <span class="name">text</span>;</div><div class="aggregate-member"><div class="attributes"></div><tt class="highlighted"><span class="hid">SDL_Texture</span>*</tt> <span class="name">usrname_texture</span>;</div><div class="aggregate-member"><a href="chat._Chatbox.update_Input.html"><tt class="highlighted"><span class="type">void</span></tt> <span class="name">updateInput</span>(string newInput);</a></div><div class="aggregate-member"><a href="chat._Chatbox.init_Chat.html"><tt class="highlighted"><span class="type">void</span></tt> <span class="name">initChat</span>(SDL_Renderer* renderer, int w, int h, string username_input);</a></div><div class="aggregate-member"><a href="chat._Chatbox.render_Background.html"><tt class="highlighted"><span class="type">void</span></tt> <span class="name">renderBackground</span>(SDL_Renderer* renderer);</a></div><div class="aggregate-member"><a href="chat._Chatbox.render_Username.html"><tt class="highlighted"><span class="type">void</span></tt> <span class="name">renderUsername</span>(SDL_Renderer* renderer);</a></div><div class="aggregate-member"><a href="chat._Chatbox.render_Chat.html"><tt class="highlighted"><span class="type">void</span></tt> <span class="name">renderChat</span>(SDL_Renderer* renderer);</a></div>}</div></div><h2 id="members"><a class="header-anchor" href="#members">Members</a></h2><h3 class="member-list-header hide-from-toc" id="function"><a class="header-anchor" href="#function">Functions</a></h3><dl class="member-list native"><dt><a href="chat._Chatbox.init_Chat.html">initChat</a><div class="simplified-prototype" style="max-width: 81ch;"><tt class="highlighted"><span class="type">void</span></tt> <span class="name">initChat</span>(SDL_Renderer* renderer, int w, int h, string username_input)</div></dt><dd><div><p>Initializes the chatbox.</p></div></dd><dt><a href="chat._Chatbox.render_Background.html">renderBackground</a><div class="simplified-prototype" style="max-width: 49ch;"><tt class="highlighted"><span class="type">void</span></tt> <span class="name">renderBackground</span>(SDL_Renderer* renderer)</div></dt><dd><div><p>Renders the chatbox background.</p></div></dd><dt><a href="chat._Chatbox.render_Chat.html">renderChat</a><div class="simplified-prototype" style="max-width: 42ch;"><tt class="highlighted"><span class="type">void</span></tt> <span class="name">renderChat</span>(SDL_Renderer* renderer)</div></dt><dd><div><p>Renders the chat text in the chatbox.</p></div></dd><dt><a href="chat._Chatbox.render_Username.html">renderUsername</a><div class="simplified-prototype" style="max-width: 47ch;"><tt class="highlighted"><span class="type">void</span></tt> <span class="name">renderUsername</span>(SDL_Renderer* renderer)</div></dt><dd><div><p>Renders the username in the chatbox.</p></div></dd><dt><a href="chat._Chatbox.update_Input.html">updateInput</a><div class="simplified-prototype" style="max-width: 36ch;"><tt class="highlighted"><span class="type">void</span></tt> <span class="name">updateInput</span>(string newInput)</div></dt><dd><div><p>Updates the input text.</p></div></dd></dl><div></div></div>
+		<div id="page-nav"><a class="parent" href="chat.html">chat</a> 
+		<span class="type-separator">structs</span><ul><li><a class="struct" href="chat._Chat_history.html">Chat_history</a></li><li><a class="struct current" href="chat._Chatbox.html">Chatbox</a></li></ul></div>
+	</div>
+	<div id="page-footer">Page generated by <a href="https://github.com/adamdruppe/adrdox">adrdox</a></div>
+</body>
+</html>
